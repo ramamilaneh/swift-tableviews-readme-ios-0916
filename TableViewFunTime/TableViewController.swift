@@ -59,6 +59,8 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "basicCell", for: indexPath)
 
         let favoriteSong = favoriteSongs[(indexPath as NSIndexPath).row]
+        print("\(indexPath.row) \(indexPath.section)")
+        print(favoriteSong)
         
         cell.textLabel?.text = favoriteSong
 
